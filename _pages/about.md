@@ -7,6 +7,8 @@ subtitle:
 profile:
   align: right
   image: mkx.jpg
+  image_width: 1024
+  image_height: 1536
   image_circular: false # crops the image to make it circular
   more_info:
 

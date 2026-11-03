@@ -25,7 +25,15 @@ layout: default
           {% if page.profile.image_circular %}
             {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
           {% endif %}
-          {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class alt=site.first_name cache_bust=true %}
+          <img
+            src="{{ profile_image_path | relative_url }}"
+            alt="{{ site.first_name }} {{ site.last_name }}"
+            class="{{ profile_image_class }}"
+            width="{{ page.profile.image_width }}"
+            height="{{ page.profile.image_height }}"
+            style="display: block; width: 100%; height: auto; object-fit: contain;"
+            loading="eager"
+          >
         {% endif %}
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
