@@ -1,17 +1,19 @@
 ---
 layout: default
 ---
-
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+        {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
     </h1>
-    {% if page.subtitle %}<p class="desc">{{ page.subtitle }}</p>{% endif %}
+    {% if page.subtitle %}
+      <p class="desc">{{ page.subtitle }}</p>
+    {% endif %}
   </header>
   <article>
     {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
@@ -25,7 +27,9 @@ layout: default
           {% endif %}
           {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class alt=site.first_name cache_bust=true %}
         {% endif %}
-        {% if page.profile.more_info %}<div class="more-info">{{ page.profile.more_info }}</div>{% endif %}
+        {% if page.profile.more_info %}
+          <div class="more-info">{{ page.profile.more_info }}</div>
+        {% endif %}
       </div>
     {% endif %}
     <div class="clearfix">{{ content }}</div>
@@ -74,7 +78,9 @@ layout: default
             <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
           </a>
         </div>
-        {% if site.contact_note %}<div class="contact-note">{{ site.contact_note }}</div>{% endif %}
+        {% if site.contact_note %}
+          <div class="contact-note">{{ site.contact_note }}</div>
+        {% endif %}
       </div>
     {% endif %}
   </article>

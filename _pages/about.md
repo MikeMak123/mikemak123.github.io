@@ -31,4 +31,3 @@ My research interests lie in structured representation learning, efficient 3D vi
 I am particularly interested in developing hierarchical, sparse, and topology-aware representations that enable efficient and scalable visual understanding.
 
 My current research explores anatomy-adaptive representations for 3D medical image analysis.
-
