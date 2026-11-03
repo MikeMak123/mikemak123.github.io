@@ -244,6 +244,8 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _pages/cv.md
+  - assets/pdf/Kaixiang_Mai_CV.pdf
   # These template examples reference the removed sample publications.
   - _posts/2023-07-12-post-bibliography.md
   - _projects/1_project.md
