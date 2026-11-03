@@ -1,17 +1,17 @@
-<div class="row">
+<div class="{% if entry.preview %}paper-entry{% endif %}">
   {% if entry.preview %}
-    <div class="col-sm-4" style="margin-bottom: 1rem;">
+    <div class="paper-preview">
       <img
         src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
         alt="{{ entry.title }}"
         width="1672"
         height="941"
-        loading="lazy"
+        loading="eager"
         style="display: block; width: 100%; height: auto; object-fit: contain; border-radius: 6px;"
       >
     </div>
   {% endif %}
-  <div class="{% if entry.preview %}col-sm-8{% else %}col-sm-12{% endif %}">
+  <div class="paper-description">
     <div class="title">{{ entry.title }}</div>
     <div class="author">
       {% for author in entry.author_array %}

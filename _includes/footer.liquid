@@ -1,4 +1,27 @@
 <style>
+  .post .site-portrait {
+    width: 22%;
+    max-width: 200px;
+    margin: 0 0 1.5rem 2rem;
+  }
+  .paper-entry {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    gap: 1.5rem;
+    align-items: start;
+  }
+  @media (max-width: 575px) {
+    .post .site-portrait {
+      float: none !important;
+      width: 60%;
+      max-width: 180px;
+      margin: 0 auto 1.75rem;
+    }
+    .paper-entry {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1rem;
+    }
+  }
   body {
     display: flex;
     flex-direction: column;
@@ -44,6 +67,9 @@
           {% endif %}
           <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}/" title="LinkedIn" aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub" aria-label="GitHub">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
           </a>
         </div>
         {% if site.contact_note %}
