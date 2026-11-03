@@ -19,7 +19,7 @@ layout: default
     {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
     {% capture profile_image_exists %}{% file_exists {{ profile_image_path }} %}{% endcapture %}
     {% if profile_image_exists == 'true' or page.profile.more_info %}
-      <div class="profile float-{{ page.profile.align | default: 'right' }}">
+      <div class="profile float-{{ page.profile.align | default: 'right' }}" style="width: 22%; max-width: 200px;">
         {% if page.profile.image and profile_image_exists == 'true' %}
           {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
           {% if page.profile.image_circular %}
