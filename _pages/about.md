@@ -26,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I am Kaixiang Mai, an undergraduate student in Computer Science at Guangdong University of Technology, expected to graduate in 2027. My research focuses on Representation Learning, Efficient 3D Vision, and Geometric Deep Learning.
+Hello! I am Kaixiang Mai, an undergraduate student in Computer Science at Guangdong University of Technology, expected to graduate in 2027, advised by <a href="https://andrewchiyz.github.io/">Prof. Yuzhu Ji</a>. My research focuses on Representation Learning, Efficient 3D Vision, and Geometric Deep Learning.
 
 I am interested in learning efficient and expressive representations by exploiting the intrinsic structure of visual data. In particular, I explore how spatial hierarchies, structural sparsity, and geometric relationships can guide representation learning beyond conventional dense computation.
 
