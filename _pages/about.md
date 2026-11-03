@@ -26,10 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an undergraduate student pursuing a B.S. in Computer Science at Guangdong University of Technology.
+Hello! I am Kaixiang Mai, currently an undergraduate student pursuing a B.S. in Computer Science at Guangdong University of Technology, expected to graduate in 2027. My research interests lie in Representation Learning, Efficient 3D Vision, and Geometric Deep Learning, with a particular focus on learning structured and adaptive representations for complex visual data.
 
-My research interests lie in structured representation learning, efficient 3D vision, and geometric deep learning.
+I am interested in how the intrinsic structure of visual data can guide the design of more efficient and expressive representations. While conventional approaches often rely on dense feature processing, real-world 3D data exhibit rich spatial hierarchies, structural sparsity, and complex geometric relationships. I believe that explicitly modeling these properties can enable more efficient computation, stronger structural reasoning, and more generalizable visual representations.
 
-I am particularly interested in developing hierarchical, sparse, and topology-aware representations that enable efficient and scalable visual understanding.
-
-My current research explores anatomy-adaptive representations for 3D medical image analysis.
+Motivated by this perspective, I proposed OcTreeMamba (IEEE BIBM 2026), a hierarchical framework that combines anatomy-adaptive sparsification with octree-based state-space modeling for 3D medical image segmentation. By organizing features into learned hierarchical structures, the framework enables structure-aware long-range feature propagation while reducing redundant computation. Building upon this work, my ongoing research explores adaptive hierarchical representations and structure-aware learning, aiming to develop efficient and generalizable methods for 3D visual understanding.
