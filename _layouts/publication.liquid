@@ -21,5 +21,28 @@
       {% endfor %}
     </div>
     <div class="periodical">{{ entry.booktitle }}, {{ entry.year }}</div>
+    <div class="links" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem;">
+      {% if entry.code != blank %}
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" target="_blank" rel="noopener noreferrer" role="button">
+          <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+        </a>
+      {% endif %}
+      {% if entry.arxiv != blank %}
+        <a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" target="_blank" rel="noopener noreferrer" role="button">
+          arXiv
+        </a>
+      {% else %}
+        <button
+          type="button"
+          class="btn btn-sm z-depth-0"
+          disabled
+          aria-disabled="true"
+          title="arXiv coming soon"
+          style="opacity: 0.45; cursor: default;"
+        >
+          arXiv
+        </button>
+      {% endif %}
+    </div>
   </div>
 </div>
